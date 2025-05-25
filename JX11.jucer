@@ -6,6 +6,8 @@
               pluginManufacturer="engid" pluginManufacturerCode="Engd" pluginCode="JX11">
   <MAINGROUP id="j7VgEx" name="JX11">
     <GROUP id="{F43EE21A-CE10-6175-E438-DDAEAD79D6B4}" name="Source">
+      <FILE id="rNzlc4" name="NoiseGenerator.h" compile="0" resource="0"
+            file="Source/NoiseGenerator.h"/>
       <FILE id="zLg0Jg" name="Voice.h" compile="0" resource="0" file="Source/Voice.h"/>
       <FILE id="gZWSea" name="Synth.h" compile="0" resource="0" file="Source/Synth.h"/>
       <FILE id="dCbArr" name="Synth.cpp" compile="1" resource="0" file="Source/Synth.cpp"/>

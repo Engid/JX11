@@ -1,0 +1,1 @@
+Building the JX11 synth from the book <u>[Creating Synthesizer Plug-Ins with C++ and JUCE](https://github.com/hollance/synth-plugin-book)</u>
