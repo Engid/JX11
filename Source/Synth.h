@@ -13,6 +13,7 @@
 #include <JuceHeader.h>
 #include "Voice.h"
 #include "NoiseGenerator.h"
+#include "Utils.h"
 
 class Synth
 {
