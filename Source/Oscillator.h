@@ -18,18 +18,19 @@ class Oscillator
 {
 public: 
     float amp;
-    float freq;
-    float sampleRate;
-    float phaseOffset;
-    int sampleIndex;
-    
-    void reset() { sampleIndex = 0; }
+    float inc;
+    float phase;
 
-    float nextSample() {
-        float output = amp * std::sin(TWO_PI * sampleIndex * freq / sampleRate + phaseOffset);
-        sampleIndex += 1;
-
-        return output;
+    void reset() {
+        phase = 0.0f;
     }
 
+    float nextSample() {
+        phase += inc;
+        if (phase >= 1.0f) {
+            phase -= 1.0f;
+        }
+
+        return amp * std::sin(TWO_PI * phase);
+    }
 };

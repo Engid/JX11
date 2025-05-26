@@ -25,4 +25,15 @@ struct Voice
     float render() {
         return osc.nextSample();
     }
+
+
+    void noteOn(int newNote, int velocity, float sampleRate) {
+        note = newNote;
+
+        float freq = 440.0f * std::exp2(float(note - 69) / 12.0f);
+
+        osc.amp = (velocity / 127.0f) * 0.5f;
+        osc.inc = freq / sampleRate;
+        osc.reset();
+    }
 };
