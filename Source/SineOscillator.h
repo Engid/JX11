@@ -14,7 +14,7 @@
 
 const float TWO_PI = 6.2831853071795864f;
 
-class Oscillator
+class SineOsc
 {
 public: 
     float amp;

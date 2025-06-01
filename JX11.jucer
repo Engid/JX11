@@ -7,7 +7,13 @@
   <MAINGROUP id="j7VgEx" name="JX11">
     <GROUP id="{F43EE21A-CE10-6175-E438-DDAEAD79D6B4}" name="Source">
       <GROUP id="{EB9D74F4-C469-C596-AA07-FD23D61C6FAC}" name="Synths">
-        <FILE id="MYxe1W" name="Oscillator.h" compile="0" resource="0" file="Source/Oscillator.h"/>
+        <GROUP id="{C5FCDCA0-E5F2-FC49-9A0D-208EBC4F8D8E}" name="Oscillators">
+          <FILE id="cLk7FE" name="AdditiveSawOsc.h" compile="0" resource="0"
+                file="Source/AdditiveSawOsc.h"/>
+          <FILE id="U1ggw1" name="SawOscillator.h" compile="0" resource="0" file="Source/SawOscillator.h"/>
+          <FILE id="MYxe1W" name="SineOscillator.h" compile="0" resource="0"
+                file="Source/SineOscillator.h"/>
+        </GROUP>
         <FILE id="zLg0Jg" name="Voice.h" compile="0" resource="0" file="Source/Voice.h"/>
         <FILE id="gZWSea" name="Synth.h" compile="0" resource="0" file="Source/Synth.h"/>
         <FILE id="dCbArr" name="Synth.cpp" compile="1" resource="0" file="Source/Synth.cpp"/>

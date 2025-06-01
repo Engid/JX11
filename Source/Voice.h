@@ -10,12 +10,12 @@
 
 #pragma once
 
-#include "Oscillator.h"
+#include "SawOscillator.h"
 
 struct Voice
 {
     int note;
-    Oscillator osc;
+    SawOsc osc;
 
     void reset() {
         note = 0;
@@ -32,8 +32,9 @@ struct Voice
 
         float freq = 440.0f * std::exp2(float(note - 69) / 12.0f);
 
-        osc.amp = (velocity / 127.0f) * 0.5f;
-        osc.inc = freq / sampleRate;
-        osc.reset();
+        float amp = (velocity / 127.0f) * 0.5f;
+        float inc = freq / sampleRate;
+
+        osc.noteOn(amp, inc);
     }
 };
